@@ -49,14 +49,14 @@ function generate() {
 
     // Mood icons (5-point scale)
     const moodCell = document.createElement("td");
-    moodCell.className = "habit-day-cell";
+    moodCell.className = "schedule-day-cell";
 
     // 5 moods: 😄 🙂 😐 🙁 😢
     const moods = ["😄", "🙂", "😐", "🙁", "😢"];
 
     moods.forEach(() => {
       const box = document.createElement("div");
-      box.className = "habit-checkbox";
+      box.className = "schedule-checkbox";
       box.style.marginRight = "6px";
       moodCell.appendChild(box);
     });
